@@ -24,6 +24,34 @@ namespace Snake
             sym = _sym;
         }
 
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }
+
+        /*Функция сдвига точки*/
+        public void Move(int offset, Direction direction)
+        {
+            if(direction == Direction.RIGHT)
+            {
+                x += offset;
+            } 
+            else if(direction == Direction.LEFT)
+            {
+                x -= offset;
+            }
+            else if(direction == Direction.UP)
+            {
+                y += offset;
+            }
+            else if(direction == Direction.DOWN)
+            {
+                y -= offset;
+            }
+        }
+
         /*Функция рисования точки*/
         public void Draw()
         {
@@ -31,5 +59,9 @@ namespace Snake
             Console.Write(sym);
         }
 
+        public override string ToString()
+        {
+            return x + ", " + y + ", " + sym;
+        }
     }
 }
