@@ -30,18 +30,6 @@ namespace Snake
             snake.Draw();
             snake.Move();
             Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-
-
 
             Console.ReadLine();
         }
