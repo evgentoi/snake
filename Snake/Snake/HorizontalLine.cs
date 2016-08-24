@@ -18,19 +18,19 @@ namespace Snake
             }
         }
 
-        public override void Draw() //альтернативная реализация виртуального метода
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+        //public override void Draw() //альтернативная реализация виртуального метода
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Yellow;
 
-            //foreach (Point p in pList)
-            //{
-            //    p.Draw();
-            //}
+        //    //foreach (Point p in pList)
+        //    //{
+        //    //    p.Draw();
+        //    //}
 
-            base.Draw(); //т.к. отрисовка соответствует базовому методу
+        //    base.Draw(); //т.к. отрисовка соответствует базовому методу
 
-            Console.ForegroundColor = ConsoleColor.White;
-        }
+        //    Console.ForegroundColor = ConsoleColor.White;
+        //}
 
     }
 }
