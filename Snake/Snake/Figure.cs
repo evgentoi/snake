@@ -10,7 +10,7 @@ namespace Snake
     {
         protected List<Point> pList; //protected -- чтобы лист был виден у наследников
 
-        public void Draw()
+        public virtual void Draw() //virtual -- Любой наследник может переопределить метод
         {
             foreach (Point p in pList)
             {
